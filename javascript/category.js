@@ -85,7 +85,7 @@ search.addEventListener("click", () => {
   localStorage.setItem("inputValue", inputValue[0]);
   searchFunction();
   if (saveBrand[0] != undefined) {
-    location.href = "/html/header/search.html";
+    location.href = "./html/header/search.html";
   }
 });
 

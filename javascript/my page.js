@@ -166,7 +166,7 @@ function change(event) {
 //--------------------------------my page in--------------------------------------//
 if (localStorage.getItem(ONLOGIN) == "null") {
   alert("로그인이 필요한 서비스 입니다.");
-  location.href = "/html/header/login.html";
+  location.href = "./html/header/login.html";
 }
 const search = document.querySelector(".fa-magnifying-glass");
 const head = document.querySelector(".head-ul-1");
@@ -203,7 +203,7 @@ search.addEventListener("click", () => {
   localStorage.setItem("inputValue", inputValue[0]);
   searchFunction();
   if (saveBrand[0] != undefined) {
-    location.href = "/html/header/search.html";
+    location.href = "./html/header/search.html";
   }
 });
 

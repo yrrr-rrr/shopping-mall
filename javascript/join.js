@@ -69,9 +69,9 @@ function saveLogin(event) {
   goToLogin();
 }
 function goToLogin() {
-  location.href = "/html/header/login.html";
+  location.href = "./html/header/login.html";
 }
 // if (localStorage.getItem(ONLOGIN) == "null") {
 //   alert("로그인이 필요한 서비스 입니다.")
-// location.href = "/html/header/login.html";
+// location.href = "./html/header/login.html";
 // }

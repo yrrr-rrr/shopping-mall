@@ -60,7 +60,7 @@ function goToLogin(event) {
     heart.addEventListener("click", onWishList);
   } else {
     alert("로그인이 필요한 서비스입니다.");
-    location.href = "/html/header/login.html";
+    location.href = "./html/header/login.html";
   }
 }
 let wishBrand = Array(0);
@@ -227,7 +227,7 @@ function onCart(event) {
   }
   if (localStorage.getItem(ONLOGIN) == "null") {
     alert("로그인이 필요한 서비스 입니다.");
-    location.href = "/html/header/login.html";
+    location.href = "./html/header/login.html";
   }
 }
 
@@ -299,7 +299,7 @@ search.addEventListener("click", () => {
   localStorage.setItem("inputValue", inputValue[0]);
   searchFunction();
   if (saveBrand[0] != undefined) {
-    location.href = "/html/header/search.html";
+    location.href = "./html/header/search.html";
   }
 });
 

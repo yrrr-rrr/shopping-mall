@@ -31,7 +31,7 @@ function checkUserMembership(event) {
 }
 
 function success(event) {
-  location.href = "/html/main/index.html";
+  location.href = "./html/main/index.html";
   localStorage.setItem("onLogin", loginId.value);
   console.log("a");
 }
@@ -41,5 +41,5 @@ function fail(event) {
 }
 if (localStorage.getItem(ONLOGIN) == "null") {
   alert("로그인이 필요한 서비스 입니다.");
-  location.href = "/html/header/login.html";
+  location.href = "./html/header/login.html";
 }
