@@ -33,7 +33,7 @@ search.addEventListener("click", () => {
   localStorage.setItem("inputValue", inputValue[0]);
   searchFunction();
   if (saveBrand[0] != undefined) {
-    location.href = "./html/header/search.html";
+    location.href = "./search.html";
   }
 });
 
@@ -100,6 +100,8 @@ let parseSearchPrice = JSON.parse(localStorage.getItem(SEARCHPRICE));
 
 const searchUl = document.querySelector(".search-ul");
 
+// console.log(parseSearchImg);
+
 for (let i = 0; i < parseSearchBrand.length; i++) {
   let searchA = document.createElement("a");
   let searchLi = document.createElement("li");
@@ -123,12 +125,12 @@ for (let i = 0; i < parseSearchBrand.length; i++) {
 /*--------------------------------------- 리스트이미지, 이름 등 삽입-------------*/
 const resultText1 = document.querySelector(".result-text1");
 const resultText2 = document.querySelector(".result-text2");
-const resultText = document.querySelector(".result-text3");
+const resultText3 = document.querySelector(".result-text3");
 const resultText4 = document.querySelector(".result-text4");
 const resultText5 = document.querySelector(".result-text5");
 const secondHeaderLi1 = document.querySelector(".second-header-li-1");
 const secondHeaderLi2 = document.querySelector(".second-header-li-2");
-const secondHeaderLi = document.querySelector(".second-header-li-3");
+const secondHeaderLi3 = document.querySelector(".second-header-li-3");
 const secondHeaderLi4 = document.querySelector(".second-header-li-4");
 const secondHeaderLi5 = document.querySelector(".second-header-li-5");
 let searchInput = localStorage.getItem("inputValue");
@@ -138,7 +140,6 @@ const focus = document.querySelector(".focus");
 resultText1.innerText = searchInput;
 resultText2.innerText = parseSearchBrand.length;
 resultText5.innerText = parseSearchBrand.length;
-
 resultText3.innerText = secondHeaderLi1.innerText.replace("검색", "");
 
 let secondHeaderLiArray = [
@@ -196,7 +197,7 @@ upBtn.addEventListener("click", () => {
 
 const drop1 = document.querySelector(".filter-1-drop-1");
 const drop2 = document.querySelector(".filter-1-drop-2");
-const drop = document.querySelector(".filter-1-drop-3");
+const drop3 = document.querySelector(".filter-1-drop-3");
 const drop4 = document.querySelector(".filter-1-drop-4");
 
 const dropDownArray = [drop1, drop2, drop3, drop4];

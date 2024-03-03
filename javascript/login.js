@@ -31,7 +31,7 @@ function checkUserMembership(event) {
 }
 
 function success(event) {
-  location.href = "./html/main/index.html";
+  location.href = "../../index.html";
   localStorage.setItem("onLogin", loginId.value);
   console.log("a");
 }
