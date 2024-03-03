@@ -1,0 +1,219 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+header{
+  width: 100%;
+  height: 10vh;
+  border-bottom: 3px solid rgb(246, 246, 246);
+  position: fixed;
+  background-color: white;
+  z-index: 3;
+}
+body{
+  width: 100%;
+  height: 100vh;
+}
+nav{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+a{
+  color: black;
+  text-decoration: none;
+}
+header a:hover{
+  color: red;
+}
+ul{
+  list-style: none;
+}
+header li{
+  margin-right: 2.2vw;
+  float: left;
+}
+.logo {
+  font-size: 35px;
+  font-weight: 600;
+  position: relative;
+  left: 7vw;
+}
+.head-1 {
+  width: 20%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.head-ul-1{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.head-2 {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.head-ul-2{
+  position: relative;
+  left: 3vw;
+}
+.remove{
+  display: none;
+}
+/*-----------------------header 공통---------------------------------------*/
+main{
+  width: 100%;
+  height: 89.7%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: 10.3vh;
+  background-color: rgb(246, 246, 246);
+}
+.whole{
+  width: 80vw;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  background-color: white;
+}
+form{
+  width: 30%;
+  height: 60%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: 10vh;
+}
+.form-box{
+  width: 100%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.title{
+  margin-bottom: 7vh;
+  width: 100%;
+  font-size: 19px;
+  display: flex;
+  justify-content: center;
+}
+.form-box p{
+  color:  #777777;
+  font-size: 12px;
+  letter-spacing: -1.5px;
+  position: relative; 
+  bottom: 0.5vh;
+}
+.id, .password{
+  margin: 1vh 0 3vh 0 ;
+  width: 99%;
+  height: 8%;
+  border: none;
+  border-bottom: 2px solid rgb(246, 246, 246);
+  background-color: rgba(0, 0, 128, 0);
+}
+.login-helper{
+  margin-bottom: 1.5vh;
+  width: 100%;
+  height: 5vh;
+  font-size: 12px;
+  line-height: 5vh;
+  letter-spacing: -1px;
+  word-spacing: 5px;
+}
+input[type="checkbox"]{
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  border: 1.5px solid rgb(210, 210, 210);
+  position: relative;
+  top: 0.8vh;
+  right: 0;
+  appearance: none;
+  z-index: 2;
+}
+input[type="checkbox"]:checked + label::before{
+  width: 2.5vh;
+  height: 2.5vh;
+  content: "\2713";
+  color: white;
+  font-size: 0.5vw;
+  font-weight: 900;
+  text-align: center;
+  line-height: 2.5vh;
+  border-radius: 100%;
+  position: fixed;
+  left: 38.09vw;
+  top: 51.3vh;
+  background: red;
+  z-index: 1;
+}
+input:focus {
+  outline:none;
+  background-color: rgba(220, 220, 220, 0.364);
+}
+.find-login{
+  margin-left: 12vh;
+  display: inline;
+  font-weight: 900;
+}
+.find-login a{
+  color: #777777;
+}
+.button-box{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.login-button{
+  width: 100%;
+  height: 7vh;
+  text-align: center;
+  line-height: 7vh;
+  border: 1.5px solid red;
+  position: relative;
+  top: 1.5vh;
+  background-color: #ff0000;
+  cursor: pointer;
+}
+.login-button input {
+  color: white;
+  font-size: 13px;
+  font-weight: 900;
+  border: none;
+  background-color: #77777700;
+}
+.button-box p {
+  color: rgb(171, 171, 171);
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: -1.5px;
+  position: relative;
+  top: 4vh;
+}
+.join{
+  width: 99.5%;
+  height: 7vh;
+  font-size: 12px;
+  text-align: center;
+  line-height: 7vh;
+  font-weight: 900;
+  border: 1.5px solid #b6b6b6c5;
+  position: relative;
+  top: 7vh;
+  background-color: #ffffff;
+  cursor: pointer;
+}

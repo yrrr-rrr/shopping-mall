@@ -1,0 +1,33 @@
+.search{
+  width: 30%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.fa-magnifying-glass {
+  font-size: 20px;
+  color: rgb(219, 219, 219);
+  position: relative;
+  left: 19vw;
+  cursor: pointer;
+  z-index: 3;
+}
+.searching {
+  width: 70%;
+  height: 6.5vh;
+  border: none;
+  border-bottom: 2px solid rgb(237, 237, 237);
+  background-color: rgba(240, 248, 255, 0);
+}
+.searching::placeholder {
+  font-size: 15px;
+  color: rgb(163, 163, 163);
+  position: relative;
+  top: 1vh;
+  left: 0.5vw;
+}
+input:focus {
+  outline: none;
+}

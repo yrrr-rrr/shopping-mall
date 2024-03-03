@@ -1,0 +1,96 @@
+main {
+  width: 100%;
+  height: 100%;
+  /* height 100하면 가로 스크롤 생김  1차 스크롤 발생 width %로 바꾸니까 해결 됨 vw는 세로 스크롤 넓이를 포함해서 가로 길이를 잡아서 가로 스크롤 생김 %는 세로 스크롤 넓이를 제외하고 가로 길이 설정*/
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  top: 10.3vh;
+}
+.banner-box {
+  margin: 0px;
+  width: 64vw;
+  height: 60vh;
+  overflow: hidden;
+  border-radius: 20px;
+  position: relative;
+  top: 4.5vh;
+}
+.banner-list {
+  display: flex;
+  transition: 0.5s ease-out;
+}
+.banner-box img {
+  width: 65vw;
+  height: 60vh;
+  border-radius: 20px;
+}
+/*--------------------------배너-------------------------*/
+.ad-box {
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  top: 8vh;
+}
+.ad {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.ad img {
+  margin: 0px 2vw 0 2vw;
+  width: 5vw;
+  border-radius: 15px;
+}
+.ad p {
+  text-align: center;
+  font-size: 13px;
+  font-weight: 500;
+}
+.ad-box-2 {
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  top: 20vh;
+}
+.ad-box-2 h2 {
+  font-size: 30px;
+  letter-spacing: -1px;
+}
+.ad-box-2 sub {
+  margin-top: 1.5vh;
+  color: #777777;
+  font-size: 17px;
+}
+.ad-2 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: 6vh;
+}
+.ad-2 img {
+  margin: 0 0.7vw 0 0.7vw;
+  width: 30vw;
+}
+.ad-2 p {
+  margin-left: 0.8vw;
+  font-size: 14px;
+  font-weight: 900;
+}
+/*-----------------------best item page-----------------------------*/
+.aaaa {
+  position: relative;
+  top: 10vh;
+}
